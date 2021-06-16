@@ -14,7 +14,7 @@ int main(void) {
 
 	printf("Input the value of height\n");
 	scanf("%f",&h);
-
+	//formula para sacar el area de un cilindro
 	area = 2*pi*r*(r+h);
 
 	printf("the area is: %f\n", area);
