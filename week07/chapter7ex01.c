@@ -1,3 +1,7 @@
+/*this program is in process
+Author: Eduardo Flores
+*/
+
 #include<stdlib.h>
 #include<stdio.h>
 
