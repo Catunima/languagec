@@ -11,6 +11,7 @@ int main(void){
     int option = 0;
     printf("**********welcome to unit converter!**********");
     do{
+        option = 0;
         printf("\n\nChoose your type of unit(Enter the number example: 1)\n\n 1.- Exit \n 2.- English unit\n 3.- metric\n");
         printf(">");
         scanf("%d", &option);
