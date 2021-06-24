@@ -4,8 +4,10 @@
 int main(void){
 
     int year;
+    char line[5]="";
    printf("please, Enter a year: ");
-   scanf("%d", &year);
+   fgets(line,sizeof(line),stdin);
+   sscanf(line,"%d", &year);
 
    if (year % 400 == 0 && year % 4 == 0) {
       printf("%d is a leap year.", year);

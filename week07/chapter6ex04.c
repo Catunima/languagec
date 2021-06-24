@@ -17,12 +17,15 @@ int main(void){
 
     float cents = 0.0;//varibale para guardar los centavos
     int cg = 0,quarters = 0,dimes = 0,nickels = 0,pennies =0;
+    char line[4] = "";
 
     
     do
     {
         printf("Please, enter the number of cents: ");
-        scanf("%f", &cents);
+        fgets(line,sizeof(line),stdin);
+        sscanf(line, "%f",&cents);
+        //Se comprueba que los datos se mantegan en centavos de lo contrario manda un error y vuelve a solicitar los datos.
         if (cents > 0 && cents <= 99)
         {
             cg = 1;

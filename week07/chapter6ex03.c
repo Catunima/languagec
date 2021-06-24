@@ -8,9 +8,11 @@ Author: Eduardo Flores
 int main(void){
 
     float grade = 0;
+    char line[4] = "";
 
     printf("Please, enter your grade: ");
-    scanf("%f", &grade);
+    fgets(line,sizeof(line),stdin);
+    sscanf(line,"%f", &grade);
 
     if(grade >= 0 && grade <=60){
         printf("F\n");
