@@ -4,7 +4,7 @@ int ct = 1;
 char line[9];
 
 int main(void){
-    
+    //bucle para mantener activo el programa hasta que se indique lo contrario
     while(ct != 0){
         printf("***Ley Ohm***\n");
         menu();
@@ -14,7 +14,7 @@ int main(void){
     system("pause");
     
 }
-
+//funcion para mostrar un menú
 int menu(void){
     int option = 0;
 
@@ -32,9 +32,10 @@ int menu(void){
 
     return option;
 }
+//función encargado de las operaciones
 int ohm(int type){
     float result = 0;
-    float v, i,r;
+    float v, i,r;//variables necesarios para la ley de ohm
 
     if(type == 0){
         //exit
